@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ResponseCache async="false" continueOnError="false" enabled="true" name="cf-cache-PostNotifyAckDeliveryAndRead">
+    <DisplayName>cf-cache-PostNotifyAckDeliveryAndRead</DisplayName>
+    <Properties/>
+    <CacheKey>
+        <Prefix/>
+        <KeyFragment ref="request.uri" type="string" />
+    </CacheKey>
+    <Scope>Exclusive</Scope>
+    <ExpirySettings>
+        <ExpiryDate/>
+        <TimeOfDay/>
+            <TimeoutInSec>60</TimeoutInSec>
+    </ExpirySettings>
+    <SkipCacheLookup>request.verb != "GET"</SkipCacheLookup>
+    <SkipCachePopulation>response.status.code &gt;= 300</SkipCachePopulation>
+    <CacheResource>notify_resources</CacheResource>
+    <ExcludeErrorResponse>true</ExcludeErrorResponse>
+    <SkipCachePopulation/>
+</ResponseCache>
